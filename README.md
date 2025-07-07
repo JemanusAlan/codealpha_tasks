@@ -80,9 +80,10 @@ Python 3.7 or above
 Pip installed
 
 1. Clone the repository
-
+<pre>
   git clone https://github.com/JemanusAlan/codealpha_tasks.git
   cd codealpha_tasks/CodeAlpha_Chatbot\ for\ FAQs
+</pre>
 
 2. Create a virtual environment (optional but recommended)
 
@@ -115,18 +116,13 @@ CodeAlpha_Chatbot for FAQs/<br>
 
 ##### Backend (chatbot.py)
 
-Preprocesses both the questions and user input (lowercasing, punctuation removal, tokenizing, stopword removal)
+-> Preprocesses both the questions and user input (lowercasing, punctuation removal, tokenizing, stopword removal)
+-> Converts questions into TF-IDF vectors
+-> Uses cosine similarity to find the most relevant question
+-> Returns the corresponding answer or a fallback message
 
-Converts questions into TF-IDF vectors
+##### Frontend (index.html + script)
 
-Uses cosine similarity to find the most relevant question
-
-Returns the corresponding answer or a fallback message
-
-###### Frontend (index.html + script)
-
-Chat interface using a form and JavaScript
-
-Sends user input to /ask endpoint via fetch()
-
-Displays response from the bot with styling and avatars
+-> Chat interface using a form and JavaScript
+-> Sends user input to /ask endpoint via fetch()
+-> Displays response from the bot with styling and avatars
