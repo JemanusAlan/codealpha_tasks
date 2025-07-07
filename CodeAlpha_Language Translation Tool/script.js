@@ -10,7 +10,7 @@ async function translateText() {
     headers: {
       "Content-Type": "application/json",
       "x-rapidapi-host": "google-translate113.p.rapidapi.com",
-      "x-rapidapi-key": "5b17d3499fmsh64fdd5f73a9ddecp11fb85jsnc18ac85e1682"
+      "x-rapidapi-key": "YOUR_RAPIDAPI_KEY"
     },
     body: JSON.stringify({
       from: sourceLang,
